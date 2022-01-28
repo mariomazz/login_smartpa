@@ -3,7 +3,8 @@ import 'package:flutter_appauth/flutter_appauth.dart';
 import 'package:login_smartpa/secure_storage/secure_storage_configurations.dart';
 import 'package:login_smartpa/secure_storage/secure_storage_sevice.dart';
 import 'package:tuple/tuple.dart';
-import 'authentication_configurations.dart';
+
+import '../login_smartpa.dart';
 
 class AuthenticationService {
   AuthenticationService({required this.loginPorticiConfiguration});
