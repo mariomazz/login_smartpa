@@ -23,7 +23,7 @@ class AuthenticationService {
           issuer: loginPorticiConfiguration.issuer,
           preferEphemeralSession: false,
           promptValues: loginPorticiConfiguration.promptValues,
-          serviceConfiguration: loginPorticiConfiguration.serviceConfiguration,
+          //serviceConfiguration: 'loginPorticiConfiguration.serviceConfiguration',
           additionalParameters: loginPorticiConfiguration.parameter,
         ),
       );

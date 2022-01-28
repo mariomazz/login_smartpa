@@ -1,5 +1,3 @@
-import 'package:flutter_appauth/flutter_appauth.dart';
-
 class AuthenticationConfigurations {
   final String tenantId;
 
@@ -13,12 +11,12 @@ class AuthenticationConfigurations {
 
   final String postLogoutRedirectUrl;
 
-  final String authorizationEndpoint;
+   String authorizationEndpoint;
   final String tokenEndpoint;
   final String endSessionEndpoint;
   final String authorityId;
 
-  late AuthorizationServiceConfiguration serviceConfiguration;
+  late String serviceConfiguration;
 
   late Map<String, String> parameter;
 
@@ -36,11 +34,8 @@ class AuthenticationConfigurations {
     required this.endSessionEndpoint,
     required this.authorityId,
   }) {
-    serviceConfiguration = AuthorizationServiceConfiguration(
-      authorizationEndpoint: authorizationEndpoint,
-      tokenEndpoint: tokenEndpoint,
-      endSessionEndpoint: endSessionEndpoint,
-    );
+    serviceConfiguration = authorizationEndpoint;
+
     parameter ==
         {
           'authorityId': authorityId,
