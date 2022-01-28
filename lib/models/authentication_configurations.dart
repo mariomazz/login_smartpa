@@ -1,4 +1,4 @@
-/* import 'package:flutter_appauth/flutter_appauth.dart';
+import 'package:flutter_appauth/flutter_appauth.dart';
 
 class AuthenticationConfigurations {
   final String tenantId;
@@ -47,4 +47,3 @@ class AuthenticationConfigurations {
         };
   }
 }
- */
